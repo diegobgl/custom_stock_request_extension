@@ -1,0 +1,19 @@
+
+<odoo>
+    <record id="view_stock_request_order_form_inherit_progress" model="ir.ui.view">
+        <field name="name">stock.request.order.form.inherit.route_id</field>
+        <field name="model">stock.request.order</field>
+        <field name="inherit_id" ref="stock_request.stock_request_order_form"/>
+        <field name="arch" type="xml">
+            <!-- Añadir attrs al campo route_id -->
+            <field name="route_id" position="attributes">
+                <attribute name="attrs">{'invisible': [('stock_request_ids', '=', False)]}</attribute>
+            </field>
+
+            <!-- Ocultar el campo procurement_group_id -->
+            <field name="procurement_group_id" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </field>
+        </field>
+    </record>
+</odoo>
