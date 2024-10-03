@@ -11,6 +11,7 @@
     'depends': ['stock_request', 'web'],
     'data': [
         'views/stock_request_order_views_inherit.xml',
+        'security/ir.model.access.csv'
     ],
 #    'assets': {
 #        'web.assets_backend': [
