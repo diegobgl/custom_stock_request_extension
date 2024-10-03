@@ -3,7 +3,7 @@
     'name': 'Custom Stock Request Progress',
     'version': '1.0',
     'category': 'Stock',
-    'summary': 'Muestra una barra de progreso en el formulario de solicitud de stock',
+    'summary': 'configuraciones adicionales request order',
     'description': '''
     Este módulo añade una barra de progreso en el formulario de órdenes de solicitud de stock, indicando
     los campos que se deben completar en orden y habilitándolos conforme se vayan llenando.
