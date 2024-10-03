@@ -17,7 +17,8 @@
         <field name="model">stock.request.order</field>
         <field name="inherit_id" ref="stock_request.stock_request_order_form"/>
         <field name="arch" type="xml">
-            <xpath expr="//group[@name='some_group']" position="inside">
+            <!-- Ubica correctamente el campo dentro de un grupo existente -->
+            <xpath expr="//group[field[@name='warehouse_id']]" position="inside">
                 <field name="analytic_account_id"/>
             </xpath>
         </field>
