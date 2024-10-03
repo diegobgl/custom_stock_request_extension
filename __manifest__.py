@@ -12,11 +12,11 @@
     'data': [
         'views/stock_request_order_views_inherit.xml',
     ],
-    'assets': {
-        'web.assets_backend': [
-            'custom_stock_request_extension/static/src/js/stock_request_progress.js',
-        ],
-    },
+#    'assets': {
+#        'web.assets_backend': [
+#            'custom_stock_request_extension/static/src/js/stock_request_progress.js',
+#        ],
+#    },
     'installable': True,
     'application': False,
 }
