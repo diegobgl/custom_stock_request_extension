@@ -10,4 +10,18 @@
             <field name="procurement_group_id" attrs="{'invisible': True}"/>
         </field>
     </record>
+
+
+    <record id="view_stock_request_order_form_inherit" model="ir.ui.view">
+        <field name="name">stock.request.order.form.inherit.analytic</field>
+        <field name="model">stock.request.order</field>
+        <field name="inherit_id" ref="stock_request.stock_request_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='some_group']" position="inside">
+                <field name="analytic_account_id"/>
+            </xpath>
+        </field>
+    </record>
+
+    
 </odoo>
